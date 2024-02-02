@@ -141,20 +141,7 @@
         >
             {{ $t('Maps.viewSummary') }}
         </button>
-
-        <button
-            v-if="
-                $viewport.width < 450 &&
-                    !isGuessButtonClicked &&
-                    !isMakeGuessButtonClicked &&
-                    !isNextButtonVisible
-            "
-            id="make-guess-button"
-            class="primary"
-            @click="showMap"
-        >
-            {{ $t('Maps.makeGuess') }}
-        </button>
+            
         <DialogSummary
             :dialog-summary="dialogSummary"
             :summary-texts="summaryTexts"
